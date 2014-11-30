@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<!-- load angular -->
+		<script src="bower_components/angular/angular.js"></script>
+		<link rel="stylesheet" href="linegraph.css">
+		<script src='linegraph.js' type="text/javascript"></script>
+	</head>
+	<body>
+
+		<div ng-app="myModule" id='lineGraph'>
+		  <div ng-controller="myController">
+
+		    <canvas tc-chartjs-line chart-options="options" chart-data="data" auto-legend></canvas>
+
+		  </div>
+		</div>
+
+		<script src="bower_components/Chart.js/Chart.min.js"></script>
+		<!-- <script src="bower_components/angular/angular.min.js"></script> -->
+		<script src="bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.min.js"></script>
+	</body>
+</html>
